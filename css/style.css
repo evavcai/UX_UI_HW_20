@@ -1,0 +1,100 @@
+body {
+    background-color: #EEEEEE;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+.flexChild p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    width: 80%;
+    padding-top: 2%;
+}
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 72px;
+    padding-left: 11%
+}
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+}
+h3 {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 42px
+}
+h4 {
+    font-family: "Ubuntu";
+    font-size: 28px;
+
+}
+.leftFoot p {
+    font-size: 14px;
+}
+
+/*nav section*/
+
+.nav {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    padding-top: 4%;
+    padding-bottom: 70px;
+}
+.logo {
+    width: 30%;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 2%;
+}
+.navButtons{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+}
+a {
+    font-family: "Poppins";
+    padding-left: 5%;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    margin-left: 6%;
+}
+
+
+/*footer*/
+footer {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 15% 70% 10%;
+    grid-template-areas: 
+    "leftFoot icons rightFoot";
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icons {
+    grid-area: icons;
+    text-align: center;
+}
+.rightFoot {
+    grid-area: rightFoot;
+
+}
+.leftFoot {
+    grid-area: leftFoot;
+    padding: 7%;
+}
+.icon {
+    padding: 5%;
+    width: 2.5%;
+    cursor: pointer
+}
+
