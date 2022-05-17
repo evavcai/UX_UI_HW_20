@@ -1,38 +1,346 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Portfolio Homepage</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>UX/UI Homework 20</title>
         <link href = "css/style.css" rel = "stylesheet" type = "text/css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-            <!-- Hotjar Tracking Code for https://evavcai.github.io/UX_UI_HW_20/ -->
-        <script>
-            (function(h,o,t,j,a,r){
-                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-                h._hjSettings={hjid:2969626,hjsv:6};
-                a=o.getElementsByTagName('head')[0];
-                r=o.createElement('script');r.async=1;
-                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-                a.appendChild(r);
-            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-        </script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     </head>
     <body>
-        <nav class = "nav">
-            <div class = "logo">
-                <img src = "images/Logo.png">
-            </div>
-            <div class = "navButtons">
-                <a>PROJECTS</a>
-                <a>SKILLS</a>
-                <a>ABOUT</a>
-                <a>CONTACT</a>
-            </div>
-        </nav>
-        <h1>Houston Nonprofit Website Redesign</h1>
-        <section class = "hero">
-            <img src="images/desktop.png">
-            <img src="images/mobile.png">
+    <!---Navigation - Bootstrap Nav Component-->
+        <div class="logo">
+            <img src="images/Logo.png">
+        </div>
+        <section class="mainNav">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                <a class="nav-link" href="#">PROJECTS</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">SKILLS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT</a>
+                </li> 
+            </ul>
         </section>
+    <!---Intro to MAM - Bootstrap col system-->
+        <section>
+            <h1>Memorial Assistance Ministries</h1>
+            <div class="overviewImages">
+                <img class="desktop"src="images/desktop.png">
+                <img class= "mobile"src="images/mobile.png">
+              </div>
+        </section>
+        <section class="overview">
+            <div class="row top">
+                <div class="col-sm-12">
+                    <h2>Goal</h2>
+                    <p>Redesign the homepage and the volunteer sign up process of Memorial Assistance Ministries’ website in an effort to better attract potential volunteers and donors, and reduce the time it takes for clients to receive assistance.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm">
+                    <h2>Role</h2>
+                    <p>User Research</p>
+                    <p>User Flow</p>
+                    <p>Prototyping</p>
+                </div>
+                <div class="col-sm">
+                    <h2>Timeline</h2>
+                    <p>3 weeks</p>
+                </div>
+                <div class="col-sm">
+                    <h2>Tools</h2>
+                    <p>Figma</p>
+                    <p>Miro</p>
+                </div>
+              </div>
+        </section>
+    <!---Research Section - Bootstrap col system-->
+        <section class="research">
+            <div class="container">
+                <div class="row space">
+                  <div class="col">
+                    <h2>Research</h2>
+                  </div>
+                  <div class="col">
+                    <p>For the first phase of the project, we conducted three different types of interviews with different audiences.</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <p>Conducted 1 - 1 interviews with Director of Development & Communications & Volunteer Coordinator to better understand the structure of the organization and identify the underlying problems they face.</p>
+                  </div>
+                  <div class="col">
+                    <p>Conducted 1 - 1 interviews with potential MAM volunteers to understand the underlying motivations for becoming a volunteer.</p>
+                  </div>
+                  <div class="col">
+                    <p>Conducted usability tests on MAM’s current homepage and volunteer flow to identify frustrations and pain points.</p>
+                  </div>
+                </div>
+            </div>
+        </section>
+    <!---Problem Statement Section - Bootstrap col system-->
+        <section class="problemStatement">
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                    <h2>Problem Statement</h2>
+                  </div>
+                  <div class="col-sm">
+                    <p>Memorial Assistance Ministries has seen a decrease in participation across three users of the organization – clients, donors, and volunteers. MAM needs greater participation from volunteers in order to better attract donors and provide more resources to the clients.</p>
+                  </div>
+                </div>
+              </div>
+        </section>
+    <!---Key Insights - Bootstrap col system-->
+        <section class="research">
+            <div class="container">
+                <div class="row space">
+                    <div class="col">
+                        <h2>Key Insights</h2>
+                    </div>
+                    <div class="col">
+                        <p>Through our interviews, we learned several important details about the organization that helped us with the redesign.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>Most clients do not have the resources or the technical ability to open MAM’s website on a phone or desktop</p>
+                    </div>
+                    <div class="col">
+                        <p>75% of MAM’s clients are monoligual Spanish speakers</p>
+                    </div>
+                    <div class="col">
+                        <p>Potential volunteers are motivated by a community with strong values to dedicate their time to a cause</p>
+                    </div>
+                    <div class="col">
+                        <p>Volunteers are quite busy during the day, so efficiency and simplicity are main factors that determine whether they want to volunteer for a particular organization or not.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!---User Persona - Bootstrap col system-->
+    <section>
+        <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <h2>User Persona</h2>
+              </div>
+              <div class="col-sm">
+                <p>With the insights from our interviews,  we determined our user to be Hailey Lawson. She is impatient, doesn't like to read a lot of text, and likes websites that display relevant information in a manner that is efficient and organized.  She needs to find an organization with a quick application process. </p>
+              </div>
+            </div>
+        </div>
+    </section>
+    <section class="userPersona">
+        <div class="haileyLawson">
+            <img src="images/haileylawson.png">
+        </div>
+    </section>
+    <!---Ideation and Features - Bootstrap col system-->
+    <section class="ideationFeatures">
+        <div class="container">
+            <div class="row space">
+              <div class="col-sm">
+                <h2>Ideation and Features</h2>
+              </div>
+              <div class="col-sm">
+                <p>For the next phase, we conducted a team brainstorming session to ideate on features that Hailey needs in order to have a better experience signing up to volunteer at MAM. We ultimately decided on three key features that would help Hailey, the clients, and the donors better utilize the services at MAM.</p>
+              </div>
+            </div>
+        </div>
+        <div class="container textCenter">
+            <div class="row">
+                <div class="col">
+                  <h5>Call-to-action buttons on the homepage and volunteer landing page</h5>
+                </div>
+                <div class="col">
+                  <h5>A volunteer application form that is integrated into MAM’s website</h5>
+                </div>
+                <div class="col">
+                  <h5>Switching between multiple languages</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                  <p>Hailey is bothered by a long application process, creating shortcuts will save her time and encourage her to sign up.</p>
+                </div>
+                <div class="col">
+                  <p>Hailey likes efficiency, creating a simpler and quicker application will enhance her experience.</p>
+                </div>
+                <div class="col">
+                  <p>75% of MAM clients are monolingual Spanish speakers and MAM is expecting an influx of Ukrainian refugees.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---Wireframes - Bootstrap col system-->
+    <section class="wireframes">
+        <div class="container">
+            <div class="row space">
+              <div class="col-sm">
+                <h2>Wireframes</h2>
+              </div>
+              <div class="col-sm">
+                <p>For the next phase, we started to build out our wireframes for the homepage, the volunteer langing page, and the volunteer application.</p>
+              </div>
+            </div>
+        </div>
+        <div class="wireframePictures">
+            <div class="homepage">
+                <h5>Homepage</h5>
+                <img src="images/wireframe_homepage.png">
+            </div>
+            <div class="volunteerLanding">
+                <h5>Volunteer Landing Page</h5>
+                <img src="images/wireframe_vol_landing.png">
+            </div>
+            <div class="volunteerOpp">
+                <h5>Volunteer Opportunities Page</h5>
+                <img src="images/wireframe_vol_opp.png">
+            </div>
+            <div class="volunteerApp">
+                <h5>Volunteer Application</h5>
+                <img src="images/wireframe_signup.png">
+            </div>
+        </div>
+    </section>
+    <!---Mid-high fidelity - Bootstrap col system-->
+    <section class="midFi">
+        <div class="container">
+            <div class="row space">
+              <div class="col-sm">
+                <h2>Mid-High Fidelity</h2>
+              </div>
+              <div class="col-sm">
+                <p>After building out the wireframes, we moved to a mid-high fidelity prototype.</p>
+              </div>
+            </div>
+        </div>
+        <div class="midfiPictures">
+            <div class="homepage">
+                <h5>Homepage</h5>
+                <img src="images/midfi_homepage.png">
+            </div>
+            <div class="volunteerLanding">
+                <h5>Volunteer Landing Page</h5>
+                <img src="images/midfi_vol_landing.png">
+            </div>
+            <div class="volunteerOpp">
+                <h5>Volunteer Opportunities Page</h5>
+                <img src="images/midfi_vol_opp.png">
+            </div>
+        </div>
+        <div class="midfiPictures2">
+            <div class="volunteerApp">
+                <h5>Volunteer Application Part 1</h5>
+                <img src="images/midfi_signup_1.png">
+            </div>
+            <div class="volunteerApp">
+                <h5>Volunteer Application Part 2</h5>
+                <img src="images/midfi_signup_2.png">
+            </div>
+        </div>
+    </section>
+    <!---Testing and Iterations -Bootstrap col system-->
+    <section class="testingIterations">
+        <div class="container">
+            <div class="row space">
+              <div class="col-sm">
+                <h2>Usability Testing and Iterations</h2>
+              </div>
+              <div class="col-sm">
+                <p>After completing the mid-high fidelity prototype, we conducted usability tests in order to identify any frustrations the user would have when signing up to become a volunteer. We also presented our high fidelity prototype to MAM's stakeholders, where we were commended on how inclusive the design felt for all users - volunteers, clients, and donors.</p>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row space">
+              <div class="col">
+                <h5>Outcomes from usability tests</h5>
+                <p>Some users did not notice the call-to-action button on the homepage</p>
+                <p>Some users did not know what MAM stood for</p>
+              </div>
+              <div class="col">
+                <h5>Outcomes from stakeholder presentation</h5>
+                <p>Stakeholders thought the color scheme did not represent their brand</p>
+              </div>
+            </div>
+        </div>
+        <div class="container iterations">
+            <div class="row space">
+              <div class="col mamlogo">
+                <img src="images/MAM-logo.png">
+                <hr>
+                <p>Spelled out MAM's full name on the homepage</p>
+              </div>
+              <div class="col fillButton">
+                <img src="images/filled-in-button.png">
+                <hr>
+                <p>Filled in the CTA button to be more noticeable</p>
+              </div>
+              <div class="col">
+                <img src="images/color-palette.png">
+                <hr>
+                <p>Created another version of the prototype with a different color scheme</p>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!---Final Prototype-->
+    <section class="finalPrototype space">
+        <div class="container">
+            <div class="row space">
+              <div class="col-sm">
+                <h2>Final Prototype</h2>
+              </div>
+            </div>
+        </div>
+        <img class="protoImage" src="images/desktop.png">
+        <button class = "protoButton" href="https://www.figma.com/proto/uThxtrWFIu8USEBgNDbeSd/MAM?node-id=217%3A2184&scaling=scale-down&page-id=0%3A1&starting-point-node-id=217%3A2184&show-proto-sidebar=1">View Prototype</button>
+    </section>
+    <!---Future Steps-->
+    <section class="futureSteps">
+        <div class="container">
+            <div class="row space">
+              <div class="col-sm">
+                <h2>Future Steps</h2>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row space">
+              <div class="col">
+                <p>Build out the flows for the other types of volunteers - Youth Volunteers, Group Volunteers, and Court Appointed Members </p>
+              </div>
+              <div class="col">
+                <p>Implement a color scheme that satisfies the stakeholders of MAM</p>
+              </div>
+              <div class="col">
+                <p>Conduct additional usability tests and continue iterating</p>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!---Final Thoughts-->
+    <section class="finalThoughts">
+        <div class="container">
+            <div class="row space">
+              <div class="col-sm">
+                <h2>Final Thoughts</h2>
+              </div>
+              <div class="col-sm">
+                <p>Designing for the user and the stakeholder at the same time presents a big challenge because you have to fulfill what the stakeholders want and simultaneously deliver what the users need. Sometimes there is friction between these two parties and<span class="bold"> you must create a solution that can benefit both.</span></p>
+              </div>
+            </div>
+        </div>
         <footer class = "footerGrid">
             <div class = "leftFoot">
                 <p>Copyright 2022 Eva Cai</p>
@@ -46,5 +354,9 @@
                 <a>CONTACT</a>
             </div>
         </footer>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     </body>
 </html>
